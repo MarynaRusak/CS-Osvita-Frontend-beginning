@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
+    <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="/">
                 <img src="/img/title.svg" alt="Logo IMAJI Coffee."/>
             </a>
@@ -20,8 +21,8 @@
                 <li><a href="#">News</a></li>
             </ul>
         </nav>
-        <button type="button">Cart</button>
-        <button type="button">Sign in</button>
+        <button id="btn-cart" aria-label="Shopping cart" type="button">Cart (2)</button>
+        <button aria-label="Sign in to account" type="button">Sign in</button>
     </header>
     <main>
         <section>
@@ -198,7 +199,7 @@
             <button type="button">Load More</button>
         </section>
     </main>
-    <footer>
+    <footer aria-label="Site footer">
         <h3>Our Location</h3>
         <address>
             <p>Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124</p>
@@ -207,34 +208,34 @@
         </address>
         <div>
             <div>
-                <ul>
+                <ul aria-label="Social media links">
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Наша сторінка у Spotify">
                             <svg width="24" height="24"><use href="/img/spotify.svg"></use></svg>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Наша сторінка у Instagram">
                             <svg width="24" height="24"><use href="/img/instagram.svg"></use></svg>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Наша сторінка у Tiktok">
                             <svg width="24" height="24"><use href="/img/tiktok.svg"></use></svg>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Наша сторінка у Youtube">
                             <svg width="24" height="24"><use href="/img/youtube.svg"></use></svg>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Наша сторінка у Twitter">
                             <svg width="24" height="24"><use href="/img/twitter.svg"></use></svg>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" aria-label="Наша сторінка у Telegram">
                             <svg width="24" height="24"><use href="/img/telegram.svg"></use></svg>
                         </a>
                     </li>
@@ -242,10 +243,10 @@
             </div>
             <div>
                 <a href="#">Delivery Order</a>
-                <a href="#">
+                <a href="#" aria-label="Download on App Store">
                     <svg width="134" height="40"><use href="/img/app-store.svg"></use></svg>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="Get it on Google Play">
                     <svg width="134" height="40"><use href="/img/google-play.svg"></use></svg>
                 </a>
             </div>

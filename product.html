@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop Product Page</title>
+    <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="/">
                 <img src="/img/title.svg" alt="Logo IMAJI Coffee."/>
             </a>
@@ -21,8 +22,8 @@
                 <li><a href="#">News</a></li>
             </ul>
         </nav>
-        <button type="button">Cart</button>
-        <button type="button">Sign in</button>
+        <button id="btn-cart" aria-label="Shopping cart" type="button">Cart (2)</button>
+        <button aria-label="Sign in to account" type="button">Sign in</button>
     </header>
     <main>
         <section>
@@ -38,7 +39,7 @@
                 </div>
                 <div>
                     <div>
-                        <nav>
+                        <nav aria-label="Breadcrumb">
                             <ul>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Menu</a></li>
@@ -46,28 +47,30 @@
                             </ul>
                         </nav>
     
-                        <h3>At Home - Classic</h3>
+                        <h1>At Home - Classic</h1>
     
                         <p>$4,00<span>$5,00</span><span>Get 20% Off in App</span></p>
-    
-                        <h5>Description:</h5>
-                        <p>An all-time favorite blend with citrus fruit
-                        character, caramel flavors, and a pleasant faintly floral aroma.
-                        <br>Locked scent:<br>
-                        Excelso prevents a
-                        ir from entering the packaging with a locked aroma, ensuring the coffee's freshness.
-                        <br><br>
-                        Storage Way:<br>
-                        To maintain the taste of coffee and the freshness of the aroma,
-                        store Excelso coffee in an airtight. 
-                        </p>
-                        <button type="button">Read less</button>
+
+                        <div id="description">
+                            <h4>Description:</h4>
+                            <p>An all-time favorite blend with citrus fruit
+                            character, caramel flavors, and a pleasant faintly floral aroma.
+                            <br>Locked scent:<br>
+                            Excelso prevents a
+                            ir from entering the packaging with a locked aroma, ensuring the coffee's freshness.
+                            <br><br>
+                            Storage Way:<br>
+                            To maintain the taste of coffee and the freshness of the aroma,
+                            store Excelso coffee in an airtight. 
+                            </p>
+                            <button aria-expanded="true" aria-controls="description" type="button">Read less</button>
+                        </div>
                     </div>
                     <div>
-                        <button type="button">Add to Cart</button>
+                        <button aria-label="Add At Home Classic to cart" type="button">Add to Cart</button>
                         <div>
                             <button type="button" aria-label="Decrease Quantity">−</button>
-                            <div>1</div>
+                            <div aria-live="polite"aria-atomic="true">1</div>
                             <button type="button" aria-label="Increase Quantity">+</button>
                         </div>
                     </div>
@@ -75,9 +78,9 @@
             </div>
             
         </section>
-        <section>
-            <h2>You May Also Like</h2>
-            <ul>
+        <section aria-labelledby="related-heading">
+            <h2 id="related-heading">You May Also Like</h2>
+            <ul aria-label="Related products">
                 <li>
                     <article>
                         <img src="/img/house-blend.png" alt="AT HOME HOUSE BLEND">
@@ -125,7 +128,7 @@
             </ul>
         </section>
     </main>
-    <footer>
+    <footer aria-label="Site footer">
         <h3>Our Location</h3>
         <address>
             <p>Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124</p>
@@ -134,7 +137,7 @@
         </address>
         <div>
             <div>
-                <ul>
+                <ul aria-label="Social media links">
                     <li>
                         <a href="#" aria-label="Наша сторінка у Spotify">
                             <svg width="24" height="24"><use href="/img/spotify.svg"></use></svg>
@@ -169,10 +172,10 @@
             </div>
             <div>
                 <a href="#">Delivery Order</a>
-                <a href="#">
+                <a href="#" aria-label="Download on App Store">
                     <svg width="134" height="40"><use href="/img/app-store.svg"></use></svg>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="Get it on Google Play">
                     <svg width="134" height="40"><use href="/img/google-play.svg"></use></svg>
                 </a>
             </div>
