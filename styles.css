@@ -107,6 +107,7 @@ font-weight: 500;
 .main-nav {
     display: flex;
     justify-content: flex-end;
+    gap: 24px;
 }
 .main-nav ul {
     display: flex;
@@ -119,29 +120,31 @@ font-weight: 500;
     color: rgba(54, 41, 31, 1);
 }
 
-#btn-cart {
-    background-color: rgba(162, 123, 92, 1);
+.button {
     padding: 12px 16px;
-    margin: 0 24px;
+    margin: 0;
     border: none;
 }
-#btn-cart:hover {
+.button--primary {
+    background-color: rgba(162, 123, 92, 1);
+    
+}
+.button--primary:hover {
     background-color: rgba(108, 82, 61, 1);
 }
-#btn-cart:active {
+.button--primary:active {
     background-color: rgba(54, 41, 31, 1);
 }
-#btn-signin {
+.button--primary__outline {
     border: 1px solid rgba(162, 123, 92, 1);
-    padding: 12px 16px;
     background-color: rgba(255, 255, 255, 1);
 }
-#btn-signin:hover {
+.button--primary__outline:hover {
     background-color: rgba(108, 82, 61, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
 }
-#btn-signin:active {
+.button--primary__outline:active {
     background-color: rgba(54, 41, 31, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
