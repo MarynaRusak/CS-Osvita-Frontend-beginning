@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <a href="/">
-                <img src="/img/title.svg" alt="Logo IMAJI Coffee."/>
-            </a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Story</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Space</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">News</a></li>
-            </ul>
-        </nav>
-        <button id="btn-cart" aria-label="Shopping cart" type="button">Cart (2)</button>
-        <button aria-label="Sign in to account" type="button">Sign in</button>
+    <header class="header">
+        <a href="/">
+            <img src="/img/title.svg" alt="Logo IMAJI Coffee."/>
+        </a>
+        <div class="main-nav">
+            <nav class="text-xl" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Space</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </nav>
+            <button class="text-base text-white" id="btn-cart" aria-label="Shopping cart" type="button">Cart (2)</button>
+            <button class="text-base text-primary" id="btn-signin" aria-label="Sign in to account" type="button">Sign in</button>
+        </div>
     </header>
     <main>
         <section>
@@ -64,134 +69,134 @@
             <ul>
                 <li><button type="button">COFFEE AND BAVERAGE</button></li>
                 <li><button type="button">FOOD AND SNACK</button></li>
-                <li><button type="button">IMAJI COFFEE AT HOME</button>/li>
+                <li><button type="button">IMAJI COFFEE AT HOME</button></li>
             </ul>
-            <ul>
+            <ul class="product-list">
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/ristretto-bianco.png" alt="Ristretto Bianco">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Ristretto Bianco</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/iced-creamy-latte.png" alt="Iced Creamy Latte">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Iced Creamy Latte</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/cappuccino.png" alt="Cappuccino">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Cappuccino</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/iced-long-black.png" alt="Iced Long Black">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Iced Long Black</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/milk-coffee-regal.png" alt="Milk Coffee Regal">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Milk Coffee Regal</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/orange-juice.png" alt="Orange Juice">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Orange Juice</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/soda-beverage.png" alt="Soda Beverage">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Soda Beverage</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/iced-coffee-with-milk.png" alt="Iced Coffee With Milk">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Iced Coffee With Milk</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/iced-americano.png" alt="Iced Americano">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Iced Americano</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/vegan-iced-latte.png" alt="Vegan Iced Latte">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Vegan Iced Latte</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/iced-chocolate.png" alt="Iced Chocolate">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Iced Chocolate</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/autumnal-coffee.png" alt="Autumnal Coffee">
-                        <div>
+                        <div class="product-card--text">
                             <h4>Autumnal Coffee</h4>
-                            <p>Only at Cafe and Delivery</p>
-                            <p>$5.00 <span>$6.00</span></p>
+                            <p class="text-xl subtitle">Only at Cafe and Delivery</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
                         </div>
                     </article>
                 </li>

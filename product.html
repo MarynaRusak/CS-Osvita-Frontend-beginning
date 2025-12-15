@@ -5,25 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop Product Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <a href="/">
-                <img src="/img/title.svg" alt="Logo IMAJI Coffee."/>
-            </a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Story</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Space</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">News</a></li>
-            </ul>
-        </nav>
-        <button id="btn-cart" aria-label="Shopping cart" type="button">Cart (2)</button>
-        <button aria-label="Sign in to account" type="button">Sign in</button>
+    <header class="header">
+        <a href="/">
+            <img src="/img/title.svg" alt="Logo IMAJI Coffee."/>
+        </a>
+        <div class="main-nav">
+            <nav class="text-xl" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Space</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </nav>
+            <button class="text-base text-white" id="btn-cart" aria-label="Shopping cart" type="button">Cart (2)</button>
+            <button class="text-base text-primary" id="btn-signin" aria-label="Sign in to account" type="button">Sign in</button>
+        </div>
     </header>
     <main>
         <section>
@@ -80,48 +85,48 @@
         </section>
         <section aria-labelledby="related-heading">
             <h2 id="related-heading">You May Also Like</h2>
-            <ul aria-label="Related products">
+            <ul product-list aria-label="Related products">
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/house-blend.png" alt="AT HOME HOUSE BLEND">
-                        <div>
+                        <div class="product-card--text">
                             <h4>AT HOME HOUSE BLEND</h4>
-                            <p>Available Buy at Website</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Available Buy at Website</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/arabica.png" alt="AT HOME ARABICA">
-                        <div>
+                        <div class="product-card--text">
                             <h4>AT HOME ARABICA</h4>
-                            <p>Available Buy at Website</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Available Buy at Website</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/luwak.png" alt="AT HOME LUWAK">
-                        <div>
+                        <div class="product-card--text">
                             <h4>AT HOME LUWAK</h4>
-                            <p>Available Buy at Website</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Available Buy at Website</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="product-card">
                         <img src="/img/luwak.png" alt="AT HOME LUWAK">
-                        <div>
+                        <div class="product-card--text">
                             <h4>AT HOME LUWAK</h4>
-                            <p>Available Buy at Website</p>
-                            <p>$5.00 <span>$6.00</span></p>
-                            <p>Get 20% Off in App</p>
+                            <p class="text-xl subtitle">Available Buy at Website</p>
+                            <p class="price">$5.00 <span>$6.00</span></p>
+                            <p class="text-xl text-primary">Get 20% Off in App</p>
                         </div>
                     </article>
                 </li>
