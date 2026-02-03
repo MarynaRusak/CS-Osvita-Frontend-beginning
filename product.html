@@ -10,186 +10,196 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css"/>
 </head>
-<body>
-    <header class="header">
-        <a href="/">
-            <img src="/img/title.svg" alt="Logo IMAJI Coffee."/>
-        </a>
-        <div class="main-nav">
-            <nav class="text-xl" aria-label="Main navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Story</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Space</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">News</a></li>
-                </ul>
-            </nav>
-            <button class="text-base text-white button button--primary" aria-label="Shopping cart" type="button">Cart (2)</button>
-            <button class="text-base text-primary button button--primary__outline" aria-label="Sign in to account" type="button">Sign in</button>
+<body class="product-page">
+    <header>
+        <div class="container header">
+            <a href="/">
+                <img src="/img/title.svg" alt="Logo IMAJI Coffee."/>
+            </a>
+            <div class="main-nav">
+                <nav class="text-xl" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Story</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Space</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </nav>
+                <button class="text-base text-white button button--primary" aria-label="Shopping cart" type="button">Cart (2)</button>
+                <button class="text-base text-primary button button--primary__outline" aria-label="Sign in to account" type="button">Sign in</button>
+            </div>
         </div>
     </header>
     <main>
         <section>
-            <div>
-                <div>
-                    <div>
-                        <img src="/img/product1-detail1.png" alt="Product 1 detail image 1"/>
-                        <img src="/img/product1-detail2.png" alt="Product 1 detail image 2"/>
-                        <img src="/img/product1-detail3.png" alt="Product 1 detail image 3"/>
-                        <img src="/img/product1-detail4.png" alt="Product 1 detail image 4"/>
-                    </div>
-                    <img src="/img/product1-main.png" alt="Product 1 main image"/>
-                </div>
-                <div>
-                    <div>
-                        <nav aria-label="Breadcrumb">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Menu</a></li>
-                                <li><a href="#">Detail</a></li>
-                            </ul>
-                        </nav>
-    
-                        <h1>At Home - Classic</h1>
-    
-                        <p>$4,00<span>$5,00</span><span>Get 20% Off in App</span></p>
-
-                        <div id="description">
-                            <h4>Description:</h4>
-                            <p>An all-time favorite blend with citrus fruit
-                            character, caramel flavors, and a pleasant faintly floral aroma.
-                            <br>Locked scent:<br>
-                            Excelso prevents a
-                            ir from entering the packaging with a locked aroma, ensuring the coffee's freshness.
-                            <br><br>
-                            Storage Way:<br>
-                            To maintain the taste of coffee and the freshness of the aroma,
-                            store Excelso coffee in an airtight. 
-                            </p>
-                            <button aria-expanded="true" aria-controls="description" type="button">Read less</button>
+            <div class="container">
+                <div class="product-info">
+                    <div class="product-images">
+                        <div class="product-details-images">
+                            <img src="/img/product1-detail1.png" alt="Product 1 detail image 1"/>
+                            <img src="/img/product1-detail2.png" alt="Product 1 detail image 2"/>
+                            <img src="/img/product1-detail3.png" alt="Product 1 detail image 3"/>
+                            <img src="/img/product1-detail4.png" alt="Product 1 detail image 4"/>
                         </div>
+                        <img src="/img/product1-main.png" alt="Product 1 main image"/>
                     </div>
                     <div>
-                        <button aria-label="Add At Home Classic to cart" type="button">Add to Cart</button>
                         <div>
-                            <button type="button" aria-label="Decrease Quantity">−</button>
-                            <div aria-live="polite"aria-atomic="true">1</div>
-                            <button type="button" aria-label="Increase Quantity">+</button>
+                            <nav aria-label="Breadcrumb">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="#">Detail</a></li>
+                                </ul>
+                            </nav>
+        
+                            <h1>At Home - Classic</h1>
+        
+                            <p>$4,00<span>$5,00</span><span>Get 20% Off in App</span></p>
+
+                            <div id="description">
+                                <h4>Description:</h4>
+                                <p>An all-time favorite blend with citrus fruit
+                                character, caramel flavors, and a pleasant faintly floral aroma.
+                                <br>Locked scent:<br>
+                                Excelso prevents a
+                                ir from entering the packaging with a locked aroma, ensuring the coffee's freshness.
+                                <br><br>
+                                Storage Way:<br>
+                                To maintain the taste of coffee and the freshness of the aroma,
+                                store Excelso coffee in an airtight. 
+                                </p>
+                                <button aria-expanded="true" aria-controls="description" type="button">Read less</button>
+                            </div>
+                        </div>
+                        <div>
+                            <button aria-label="Add At Home Classic to cart" type="button">Add to Cart</button>
+                            <div>
+                                <button type="button" aria-label="Decrease Quantity">−</button>
+                                <div aria-live="polite"aria-atomic="true">1</div>
+                                <button type="button" aria-label="Increase Quantity">+</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </section>
-        <section aria-labelledby="related-heading">
-            <h2 id="related-heading">You May Also Like</h2>
-            <ul product-list aria-label="Related products">
-                <li>
-                    <article class="product-card">
-                        <img src="/img/house-blend.png" alt="AT HOME HOUSE BLEND">
-                        <div class="product-card--text">
-                            <h4>AT HOME HOUSE BLEND</h4>
-                            <p class="text-xl subtitle">Available Buy at Website</p>
-                            <p class="price">$5.00 <span>$6.00</span></p>
-                            <p class="text-xl text-primary">Get 20% Off in App</p>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="product-card">
-                        <img src="/img/arabica.png" alt="AT HOME ARABICA">
-                        <div class="product-card--text">
-                            <h4>AT HOME ARABICA</h4>
-                            <p class="text-xl subtitle">Available Buy at Website</p>
-                            <p class="price">$5.00 <span>$6.00</span></p>
-                            <p class="text-xl text-primary">Get 20% Off in App</p>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="product-card">
-                        <img src="/img/luwak.png" alt="AT HOME LUWAK">
-                        <div class="product-card--text">
-                            <h4>AT HOME LUWAK</h4>
-                            <p class="text-xl subtitle">Available Buy at Website</p>
-                            <p class="price">$5.00 <span>$6.00</span></p>
-                            <p class="text-xl text-primary">Get 20% Off in App</p>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="product-card">
-                        <img src="/img/luwak.png" alt="AT HOME LUWAK">
-                        <div class="product-card--text">
-                            <h4>AT HOME LUWAK</h4>
-                            <p class="text-xl subtitle">Available Buy at Website</p>
-                            <p class="price">$5.00 <span>$6.00</span></p>
-                            <p class="text-xl text-primary">Get 20% Off in App</p>
-                        </div>
-                    </article>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer aria-label="Site footer">
-        <h3>Our Location</h3>
-        <address>
-            <p>Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124</p>
-            <p>Customer Service <a href="tel:+628228766862">+6282-2876-6862</a></p>
-            <p>We Are Open from Sun - Mon 10 AM - 22 PM</p>
-        </address>
-        <div>
-            <div>
-                <ul aria-label="Social media links">
+        <section class="suggestions" aria-labelledby="related-heading">
+            <div class="container">
+                <h2 id="related-heading">You May Also Like</h2>
+                <ul class="product-list" aria-label="Related products">
                     <li>
-                        <a href="#" aria-label="Наша сторінка у Spotify">
-                            <svg width="24" height="24"><use href="/img/spotify.svg"></use></svg>
-                        </a>
+                        <article class="product-card">
+                            <img src="/img/house-blend.png" alt="AT HOME HOUSE BLEND">
+                            <div class="product-card--text">
+                                <h4>AT HOME HOUSE BLEND</h4>
+                                <p class="text-xl subtitle">Available Buy at Website</p>
+                                <p class="price">$5.00 <span>$6.00</span></p>
+                                <p class="text-xl text-primary">Get 20% Off in App</p>
+                            </div>
+                        </article>
                     </li>
                     <li>
-                        <a href="#" aria-label="Наша сторінка у Instagram">
-                            <svg width="24" height="24"><use href="/img/instagram.svg"></use></svg>
-                        </a>
+                        <article class="product-card">
+                            <img src="/img/arabica.png" alt="AT HOME ARABICA">
+                            <div class="product-card--text">
+                                <h4>AT HOME ARABICA</h4>
+                                <p class="text-xl subtitle">Available Buy at Website</p>
+                                <p class="price">$5.00 <span>$6.00</span></p>
+                                <p class="text-xl text-primary">Get 20% Off in App</p>
+                            </div>
+                        </article>
                     </li>
                     <li>
-                        <a href="#" aria-label="Наша сторінка у Tiktok">
-                            <svg width="24" height="24"><use href="/img/tiktok.svg"></use></svg>
-                        </a>
+                        <article class="product-card">
+                            <img src="/img/luwak.png" alt="AT HOME LUWAK">
+                            <div class="product-card--text">
+                                <h4>AT HOME LUWAK</h4>
+                                <p class="text-xl subtitle">Available Buy at Website</p>
+                                <p class="price">$5.00 <span>$6.00</span></p>
+                                <p class="text-xl text-primary">Get 20% Off in App</p>
+                            </div>
+                        </article>
                     </li>
                     <li>
-                        <a href="#" aria-label="Наша сторінка у Youtube">
-                            <svg width="24" height="24"><use href="/img/youtube.svg"></use></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Наша сторінка у Twitter">
-                            <svg width="24" height="24"><use href="/img/twitter.svg"></use></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Наша сторінка у Telegram">
-                            <svg width="24" height="24"><use href="/img/telegram.svg"></use></svg>
-                        </a>
+                        <article class="product-card">
+                            <img src="/img/luwak.png" alt="AT HOME LUWAK">
+                            <div class="product-card--text">
+                                <h4>AT HOME LUWAK</h4>
+                                <p class="text-xl subtitle">Available Buy at Website</p>
+                                <p class="price">$5.00 <span>$6.00</span></p>
+                                <p class="text-xl text-primary">Get 20% Off in App</p>
+                            </div>
+                        </article>
                     </li>
                 </ul>
             </div>
+        </section>
+    </main>
+    <footer aria-label="Site footer">
+        <div class="container">
+            <h2>Our Location</h2>
+            <address>
+                <p>Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124</p>
+                <p>Customer Service <a href="tel:+628228766862">+6282-2876-6862</a></p>
+                <p>We Are Open from Sun - Mon 10 AM - 22 PM</p>
+            </address>
             <div>
-                <a href="#">Delivery Order</a>
-                <a href="#" aria-label="Download on App Store">
-                    <svg width="134" height="40"><use href="/img/app-store.svg"></use></svg>
-                </a>
-                <a href="#" aria-label="Get it on Google Play">
-                    <svg width="134" height="40"><use href="/img/google-play.svg"></use></svg>
-                </a>
+                <div class="footer-links">
+                    <ul class="social-media" aria-label="Social media links">
+                        <li>
+                            <a href="#" aria-label="Наша сторінка у Spotify">
+                                <svg width="24" height="24"><use href="/img/spotify.svg"></use></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Наша сторінка у Instagram">
+                                <svg width="24" height="24"><use href="/img/instagram.svg"></use></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Наша сторінка у Tiktok">
+                                <svg width="24" height="24"><use href="/img/tiktok.svg"></use></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Наша сторінка у Youtube">
+                                <svg width="24" height="24"><use href="/img/youtube.svg"></use></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Наша сторінка у Twitter">
+                                <svg width="24" height="24"><use href="/img/twitter.svg"></use></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Наша сторінка у Telegram">
+                                <svg width="24" height="24"><use href="/img/telegram.svg"></use></svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="#">Delivery Order</a>
+                        <a href="#" aria-label="Download on App Store">
+                            <svg width="134" height="40"><use href="/img/app-store.svg"></use></svg>
+                        </a>
+                        <a href="#" aria-label="Get it on Google Play">
+                            <svg width="134" height="40"><use href="/img/google-play.svg"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <p  class="text-primary">© 2023 IMAJI COFFEE, All rights reserved</p>
+                <div>
+                    <a  class="text-primary" href="#">Terms and Conditions</a>
+                    <a  class="text-primary" href="#">Privacy Policy</a>
+                </div>
             </div>
         </div>
-        <div>
-            <p>© 2023 IMAJI COFFEE, All rights reserved</p>
-            <a href="#">Terms and Conditions</a>
-            <a href="#">Privacy Policy</a>
-        </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
