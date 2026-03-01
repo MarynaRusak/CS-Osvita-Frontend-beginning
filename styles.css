@@ -147,6 +147,62 @@ font-weight: 500;
 .main-nav a:hover {
     color: rgba(108, 82, 61, 1);
 }
+.main-nav button {
+    border: none;
+    box-shadow: none;
+    appearance: none;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+}
+.main-nav button img {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.cart-icon::after {
+    content: '10';
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(255, 169, 11, 1);
+    position: absolute;
+    top: -2px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-mobile {
+    display: none;
+}
+.nav-tablet {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .nav-tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 24px;
+        align-items: center;
+    }
+    .nav-desktop {
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .nav-tablet {
+        display: none;
+    }
+    .nav-desktop {
+        display: none;
+    }
+    .nav-mobile {
+        display: block;
+    }
+}
+
 
 .button {
     padding: 12px 16px;
@@ -334,4 +390,9 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#more {
+    margin: 48px auto 80px;
+    display: block;
 }

@@ -1,408 +1,5 @@
-const products = [
-// Beverages
-{
-    id: 1,
-    name: "Ristretto Bianco",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Ristretto+Bianco"
-},
-{
-    id: 2,
-    name: "Iced Creamy Latte",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Iced+Creamy+Latte"
-},
-{
-    id: 3,
-    name: "Cappuccino",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Cappuccino"
-},
-{
-    id: 4,
-    name: "Iced Long Black",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Iced+Long+Black"
-},
-{
-    id: 5,
-    name: "Milk Coffee Regal",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Milk+Coffee+Regal"
-},
-{
-    id: 6,
-    name: "Orange Juice",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Orange+Juice"
-},
-{
-    id: 7,
-    name: "Soda Beverage",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Soda+Beverage"
-},
-{
-    id: 8,
-    name: "Iced Coffee with Milk",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Iced+Coffee"
-},
-{
-    id: 9,
-    name: "Iced Americano",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Iced+Americano"
-},
-{
-    id: 10,
-    name: "Vegan Iced Latte",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Vegan+Iced+Latte"
-},
-{
-    id: 11,
-    name: "Iced Chocolate",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Iced+Chocolate"
-},
-{
-    id: 12,
-    name: "Autumnal Coffee",
-    category: "beverages",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Autumnal+Coffee"
-},
 
-// Food
-{
-    id: 13,
-    name: "Seafood Lunch",
-    category: "food",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Seafood+Lunch"
-},
-{
-    id: 14,
-    name: "French Toast with Sugar",
-    category: "food",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=French+Toast"
-},
-{
-    id: 15,
-    name: "Chocolate Croissant",
-    category: "food",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Chocolate+Croissant"
-},
-{
-    id: 16,
-    name: "Potato Wedges",
-    category: "food",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Potato+Wedges"
-},
-{
-    id: 17,
-    name: "Brownies",
-    category: "food",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Brownies"
-},
-{
-    id: 18,
-    name: "Banana Cake",
-    category: "food",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: false,
-    image: "https://placehold.co/300x300?text=Banana+Cake"
-},
-{
-    id: 19,
-    name: "Sandwiches and Pickles",
-    category: "food",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Sandwiches"
-},
-{
-    id: 20,
-    name: "Spaghetti Bolognese",
-    category: "food",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Spaghetti"
-},
-{
-    id: 21,
-    name: "Sandwich Vegan",
-    category: "food",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Sandwich+Vegan"
-},
-{
-    id: 22,
-    name: "Eggs Benedict Burger",
-    category: "food",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Eggs+Benedict"
-},
-{
-    id: 23,
-    name: "Corn Cheese Sandwich",
-    category: "food",
-    price: 5.00,
-    originalPrice: 6.00,
-    onSale: true,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Corn+Cheese"
-},
-{
-    id: 24,
-    name: "Buttermilk Waffle",
-    category: "food",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Buttermilk+Waffle"
-},
-
-// Coffee Beans
-{
-    id: 25,
-    name: "At Home House Blend",
-    category: "coffee-beans",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Available Buy at Website",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=House+Blend"
-},
-{
-    id: 26,
-    name: "At Home Arabica",
-    category: "coffee-beans",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Available Buy at Website",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Arabica"
-},
-{
-    id: 27,
-    name: "At Home Classic",
-    category: "coffee-beans",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Classic"
-},
-{
-    id: 28,
-    name: "At Home Kalosi",
-    category: "coffee-beans",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: false,
-    image: "https://placehold.co/300x300?text=Kalosi"
-},
-{
-    id: 29,
-    name: "At Home Luwak",
-    category: "coffee-beans",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Luwak"
-},
-{
-    id: 30,
-    name: "At Home Robusta",
-    category: "coffee-beans",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Robusta"
-},
-
-// Equipment
-{
-    id: 31,
-    name: "White Mug",
-    category: "equipment",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=White+Mug"
-},
-{
-    id: 32,
-    name: "Coffee Temper 58 mm",
-    category: "equipment",
-    price: 5.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Coffee+Temper"
-},
-{
-    id: 33,
-    name: "French Press 8 Cups",
-    category: "equipment",
-    price: 25.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=French+Press+8"
-},
-{
-    id: 34,
-    name: "Glass Tea Pot Teiera (6 Cups)",
-    category: "equipment",
-    price: 13.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Tea+Pot"
-},
-{
-    id: 35,
-    name: "French Press 3 Cup",
-    category: "equipment",
-    price: 20.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=French+Press+3"
-},
-{
-    id: 36,
-    name: "Moka Pot",
-    category: "equipment",
-    price: 20.00,
-    originalPrice: null,
-    onSale: false,
-    availability: "Only at Cafe and Delivery",
-    inStock: true,
-    image: "https://placehold.co/300x300?text=Moka+Pot"
-}
-];
+const API_URL = "https://6987b2ce780e8375a686d64e.mockapi.io/products";
 
 const productsContainer = document.querySelector(".product-list");
 const filterButtonsContainer = document.querySelector(".filter-buttons");
@@ -410,39 +7,183 @@ const search = document.getElementById("search");
 const emptyContainer = document.getElementById("no-products");
 const priceFilter = document.getElementById("price");
 const sortBy = document.getElementById("sortby");
+const searchForm = document.querySelector(".search-form");
 
+class ApiService {
+    constructor (url) {
+        this.apiUrl = url;
+    }
 
-let currentCategory = "beverages";
-let sortField;
-let sortDirect;
-let currentpriceOption = "under 10";
+    getAllProducts = async (params = {}) => {
+        try {
+            const queryParams = new URLSearchParams();
 
-filterButtonsContainer.addEventListener("click", (event) => {
-    const category = event.target.dataset.category;
-    if(category) {
-        currentCategory = category;
+            if (params.category) {
+                queryParams.append("category", params.category);
+            }
+            if(params.search) {
+                queryParams.append("search", params.search);
+            }
+            if(params.sortBy) {
+                queryParams.append("sortBy", params.sortBy);
+                queryParams.append("order", params.order);
+            }
+            if(params.page) {
+                queryParams.append("page", params.page);
+            }
+            if(params.limit) {
+                queryParams.append("limit", params.limit);
+            }
+
+            const response = await fetch(`${this.apiUrl}?${queryParams.toString()}`);
+        if(!response.ok) {
+            throw new Error("Failed");
+        }
+        const data = await response.json();
+        return data;
+
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
+    getProductById = async (productId) => {
+        try {
+            const response = await fetch(`${this.apiUrl}/${productId}`);
+        if(!response.ok) {
+            throw new Error("Failed");
+        }
+        const data = await response.json();
+        return data;
+
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
+    createProduct = async (product) => {
+        try {
+            const response = await fetch(this.apiUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(product),
+            });
+            if(!response.ok) {
+                throw new Error("Failed");
+            }
+            const data = await response.json();
+            return data;
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
+    updateProduct = async (productId, product) => {
+        try {
+            const response = await fetch(`${this.apiUrl}/${productId}`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(product),
+            });
+            if(!response.ok) {
+                throw new Error("Failed");
+            }
+            const data = await response.json();
+            return data;
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
+    deleteProduct = async (productId) => {
+        try {
+            const response = await fetch(`${this.apiUrl}/${productId}`, {
+                method: "DELETE",
+            });
+            if(!response.ok) {
+                throw new Error("Failed");
+            }
+            const data = await response.json();
+            return data;
+        } catch (e) {
+            console.log(e);
+        }
+    };
+};
+
+const api = new ApiService(API_URL);
+
+const state = {
+    products: [],
+    category: "beverages",
+    search: "",
+    sortBy: "price",
+    order: "asc",
+    priceFilter: "select", 
+    isLoading: false
+};
+
+const setState =  (updates) => {
+    Object.assign(state, updates);
+};
+
+const loadProducts = async () => {
+    try {
+        setState({ isLoading: true });
+        const params = {
+            category: state.category,
+            sortBy: state.sortBy,
+            order: state.order
+        };
+
+        const products = await api.getAllProducts(params);
+        setState({ products: products });
         renderProducts();
+    } catch(e) {
+        console.log(e);
+    } finally {
+        setState({ isLoading: false });
+    }
+};
+
+filterButtonsContainer.addEventListener("click", async (event) => {
+    const category = event.target.dataset.category;
+    if (category) {
+        setState({ category: category });
+        await loadProducts();
     }
 })
 
 priceFilter.addEventListener("change", (event) => {
-    const priceOption = event.target.value;
-    if(priceOption) {
-        currentpriceOption = priceOption;
-        renderProducts();
-    }
-    
+    setState({ priceFilter: event.target.value });
+    renderProducts();
 });
 
 search.addEventListener("input", (event) => {
     const searchTerm = event.target.value;
-    renderProducts(searchTerm);
+    setState({ search: searchTerm });
+    renderProducts();
 });
 
-sortBy.addEventListener("change", (event) => {
-    sortField = event.target.dataset.sort;
-    sortDirect = event.target.value;
-    renderProducts();
+searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+});
+
+sortBy.addEventListener("change", async (event) => {
+    const value = event.target.value;
+
+    if (value === "select") {
+        setState({ sortBy: "", order: "asc" });
+    } else if (value === "price: high to low") {
+        setState({ sortBy: "price", order: "desc" });
+    } else if (value === "price: low to high") {
+        setState({ sortBy: "price", order: "asc" });
+    }
+    await loadProducts();
 });
 
 const createProductCard = (product) => {
@@ -461,50 +202,30 @@ const createProductCard = (product) => {
     `;
 };
 
-const renderProducts = (search = "") => {
-    const filteredProducts = products.filter((product) => {
-        const matchedSearch = 
-        product.name.toLowerCase().includes(search.toLowerCase());
+const renderProducts = () => {
 
-        let matchedCategory = true;
-
-        matchedCategory = product.category === currentCategory;
-
-        return matchedSearch && matchedCategory;
+    const searchTerm = state.search.toLowerCase();
+    const filteredProducts = state.products.filter((product) => {
+        return product.name.toLowerCase().includes(searchTerm);
     });
 
-    const sortedProducts = filteredProducts.sort((a, b) => {
-        if(sortField === "sort") {
-            if(sortDirect === "price: high to low") {
-                return b.price - a.price;
-            } else return a.price - b.price;
-        };
-    });
-
-    const priceFilteredProducts = sortedProducts.filter((p) => {
-        if(currentpriceOption === "under 10") {
-            return p.price < 10;
-        } else if (currentpriceOption === "under 20") {
-            return p.price < 20;
-        } else if (currentpriceOption === "under 30") {
-            return p.price < 30;
-        } else if (currentpriceOption === "under 40") {
-            return p.price < 40;
-        }
+    const priceFilteredProducts = filteredProducts.filter((p) => {
+        const price = Number(p.price);
+        if (state.priceFilter === "under 10") return price < 10;
+        if (state.priceFilter === "under 20") return price < 20;
+        if (state.priceFilter === "under 30") return price < 30;
+        if (state.priceFilter === "under 40") return price < 40;
         return true;
     });
 
     productsContainer.innerHTML = "";
 
-    if(priceFilteredProducts.length ===  0) {
-        emptyContainer.classList.remove("hidden");
+    if(priceFilteredProducts.length === 0) {
+        productsContainer.innerHTML = `<div>Empty list</div>`
         return;
-    } else {
-        emptyContainer.classList.add("hidden");
     }
-    const data = priceFilteredProducts.map((p) => createProductCard(p)).join("");
-    productsContainer.innerHTML = data;
+    productsContainer.innerHTML = priceFilteredProducts
+    .map((p) => createProductCard(p)).join("");
 };
 
-renderProducts();
-
+loadProducts();
