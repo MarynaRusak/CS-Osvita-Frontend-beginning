@@ -152,7 +152,6 @@ font-weight: 500;
     box-shadow: none;
     appearance: none;
     position: relative;
-    background-color: rgba(255, 255, 255, 1);
 }
 .main-nav button img {
     padding: 12px;
@@ -187,6 +186,9 @@ font-weight: 500;
         gap: 24px;
         align-items: center;
     }
+    .main-nav button {
+        background-color: white;
+    }
     .nav-desktop {
         display: none;
     }
@@ -200,6 +202,9 @@ font-weight: 500;
     }
     .nav-mobile {
         display: block;
+    }
+    .main-nav button {
+        background-color: white;
     }
 }
 
